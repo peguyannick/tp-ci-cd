@@ -36,6 +36,5 @@ jobs:
     steps: 
       - name: Déclencher le déploiement sur Render 
         run: | 
-          curl -X POST "https://api.render.com/deploy/srv
-XXXXXXXXXX?key=YOUR_API_KEY"
+          curl -X POST "https://tp-ci-cd-5jbj.onrender.com"
 
