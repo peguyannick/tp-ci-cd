@@ -1,14 +1,4 @@
-name: Test Python App 
- 
-on: [push, pull_request] 
- 
-jobs: 
-  test: 
-    runs-on: ubuntu-latest 
-    steps: 
-      - name: Récupérer le code 
-        uses: actions/checkout@v3
-        name: CI/CD Pipeline 
+name: CI/CD Pipeline 
  
 on: [push] 
  
@@ -37,4 +27,3 @@ jobs:
       - name: Déclencher le déploiement sur Render 
         run: | 
           curl -X POST "https://tp-ci-cd-5jbj.onrender.com"
-
